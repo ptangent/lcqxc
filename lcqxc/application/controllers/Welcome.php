@@ -27,6 +27,11 @@ class Welcome extends CI_Controller {
 
     public function index()
 	{   log_message('error', 'mobiletest'.(int)isMobile());
-		$this->load->view('index');
+		if(isMobile()){
+            $this->load->view('m_index');
+        }else{
+            $this->load->view('index');
+        }
+
 	}
 }

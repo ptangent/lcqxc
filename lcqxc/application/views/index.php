@@ -420,10 +420,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                &copy; 2013 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>. All Rights Reserved.
+                &copy; 2015 <a target="_blank" href="#" title="Free Twitter Bootstrap WordPress Themes and HTML templates">虎门乐诚汽修</a>. 版权所有.
             </div>
             <div class="col-sm-6">
-                <img class="pull-right" src="images/shapebootstrap.png" alt="ShapeBootstrap" title="ShapeBootstrap">
+                <img class="pull-right" src="<?php echo base_url("ui_ref/images/shapebootstrap.png?");?>" alt="ShapeBootstrap" title="ShapeBootstrap">
             </div>
         </div>
     </div>
