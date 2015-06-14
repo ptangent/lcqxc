@@ -426,6 +426,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <img class="pull-right" src="<?php echo base_url("ui_ref/images/shapebootstrap.png?");?>" alt="ShapeBootstrap" title="ShapeBootstrap">
             </div>
         </div>
+        <div class="row">
+            <div class="col-sm-12 center-block" style="text-align: center">
+                <a href="<?php echo base_url("index.php/ToDesktop");?>"><b>电脑版</b</a>
+                <span>||</span>
+                <a href="<?php echo base_url("index.php/ToMobile");?>"><b>移动版</b></a>
+            </div>
+        </div>
     </div>
 </footer><!--/#footer-->
 
