@@ -7,6 +7,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<title>虎门乐诚汽修</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
+    <meta name="keywords" content="虎门乐诚汽修">
+    <meta name="description" content="虎门乐诚汽修官网">
+
     <link type="text/css" rel="stylesheet" href="<?php echo base_url("ui_ref/css/bootstrap.min.css");?>">
     <link type="text/css" rel="stylesheet" href="<?php echo base_url("ui_ref/css/font-awesome.min.css");?>">
     <link type="text/css" rel="stylesheet" href="<?php echo base_url("ui_ref/css/prettyPhoto.css");?>">
@@ -423,14 +426,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 &copy; 2015 <a target="_blank" href="#" title="Free Twitter Bootstrap WordPress Themes and HTML templates">虎门乐诚汽修</a>. 版权所有.
             </div>
             <div class="col-sm-6">
-                <img class="pull-right" src="<?php echo base_url("ui_ref/images/shapebootstrap.png?");?>" alt="ShapeBootstrap" title="ShapeBootstrap">
+                <a href="#" class="pull-right">技术支持jiatel@163.com</a>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-12 center-block" style="text-align: center">
-                <a href="<?php echo base_url("index.php/ToDesktop");?>"><b>电脑版</b</a>
-                <span>||</span>
-                <a href="<?php echo base_url("index.php/ToMobile");?>"><b>移动版</b></a>
+                <a href="<?php echo base_url("index.php/ToDesktop");?>"><b style="color: #222"><i class="icon-desktop" ></i>&nbsp;电脑版</b</a>
+                <span>|</span>
+                <a href="<?php echo base_url("index.php/ToMobile");?>"><b><i class="icon-tablet  " ></i>&nbsp;转至移动版</b></a>
             </div>
         </div>
     </div>

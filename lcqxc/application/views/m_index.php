@@ -49,7 +49,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="page-header" id="banner" style="margin: 0px 0 22px;">
         <div class="row">
             <div class="col-lg-8 col-md-6 col-sm-6">
-                <h1>虎门乐诚汽修</h1>
+                <h1>虎门乐诚汽车服务</h1>
                 <p class="lead">敬业乐群-诚信经营</p>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
@@ -68,8 +68,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="col-lg-12">
         <div class="bs-component">
             <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+                <p>虎门乐诚汽修创办于<strong class="mobile_font_nor">1993</strong>年，专注服务于虎门汽车行业20余载，一直致力于为群众提供专业、优质、可靠的汽车服务。欢迎新老顾客咨询与光临.</p>
+                <small>营业时间：<strong class="mobile_font_nor">8:30-19:30</strong> <cite title="Source Title">（国家法定节假日除外）</cite></small>
+                <small>地址：<strong>虎门太沙路金洲段金捷路与太沙路交汇处</strong><cite title="Source Title">（下方查看详情）</cite></small>
+                <small>电话：<strong class="mobile_font_nor">0769-85224911</strong><cite title="Source Title">（下方查看详情）</cite></small>
             </blockquote>
             <div id="source-button" class="btn btn-primary btn-xs" style="display: none;">&lt; &gt;</div></div>
     </div>
@@ -78,11 +80,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 <div class="list-group">
-    <a class="list-group-item" href="#"><i class="fa fa-wrench fa-fw fa-5x"></i>&nbsp; 汽车服务</a>
-    <a class="list-group-item" href="#"><i class="fa fa-book fa-fw fa-5x"></i>&nbsp; 企业简介</a>
-    <a class="list-group-item" href="#"><i class="fa fa-cogs fa-fw fa-5x"></i>&nbsp; 配套&硬件</a>
-    <a class="list-group-item" href="#"><i class="fa fa-phone fa-fw fa-5x"></i>&nbsp; 联系方式</a>
-    <a class="list-group-item" href="#"><i class="fa fa-map-marker fa-fw fa-5x"></i>&nbsp; 详细地址</a>
+    <a class="list-group-item" href="#"><i class="fa fa-wrench fa-fw fa-5x text-primary"></i>&nbsp;&nbsp;<b class="mobile_big_text">服务介绍</b> </a>
+    <a class="list-group-item" href="#"><i class="fa fa-book fa-fw fa-5x text-info"></i>&nbsp; &nbsp;<b class="mobile_big_text">企业简介</b></a>
+    <a class="list-group-item" href="#"><i class="fa fa-cogs fa-fw fa-5x"></i>&nbsp; &nbsp;<b class="mobile_big_text">配套&硬件</b></a>
+    <a class="list-group-item" href="#"><i class="fa fa-phone fa-fw fa-5x text-warning"></i>&nbsp; &nbsp;<b class="mobile_big_text">联系方式</b></a>
+    <a class="list-group-item" href="#"><i class="fa fa-map-marker fa-fw fa-5x text-danger"></i>&nbsp; &nbsp;<b class="mobile_big_text">详细地址</b></a>
 </div>
 
 
@@ -94,12 +96,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 &copy; 2015 <a target="_blank" href="#" title="Free Twitter Bootstrap WordPress Themes and HTML templates">虎门乐诚汽修</a>. 版权所有.
             </div>
             <div class="col-sm-6">
-                <img class="pull-right" src="<?php echo base_url("ui_ref/images/shapebootstrap.png?");?>" alt="ShapeBootstrap" title="ShapeBootstrap">
+                <a href="#" class="pull-right">技术支持jiatel@163.com</a>
+
             </div>
         </div>
         <div class="row">
             <div class="col-sm-12 center-block" style="text-align: center">
-                <a href="<?php echo base_url("index.php/ToDesktop");?>"><b ><i class="fa fa-desktop fa-lg fa-fw"></i>电脑版</b</a>
+                <a href="<?php echo base_url("index.php/ToDesktop");?>"><b ><i class="fa fa-desktop fa-lg fa-fw"></i>转至电脑版</b></a>
 
                 <a href="<?php echo base_url("index.php/ToMobile");?>"><b style="color: #222"><i class="fa fa-tablet fa-lg fa-fw " ></i>移动版</b></a>
             </div>
