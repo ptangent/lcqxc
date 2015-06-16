@@ -47,19 +47,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="bs-component" style="margin-bottom: 15px;">
     <div class="btn-group btn-group-justified">
         <a href="<?php echo base_url("index.php/Mservice");?>" class="btn btn-default " >
-            <i class="fa fa-wrench fa-fw fa-lg text-primary"></i><b>服务</b>
+            <i class="fa fa-wrench  text-primary"><b>服务</b></i>
         </a>
         <a href="<?php echo base_url("index.php/Mintroduction");?>" class="btn btn-default">
-            <i class="fa fa-book fa-fw fa-lg text-info"></i><b>简介</b>
+            <i class="fa fa-book  text-info"><b>简介</b></i>
         </a>
         <a href="<?php echo base_url("index.php/Mhardware");?>" class="btn btn-default active">
-            <i class="fa fa-cogs fa-fw fa-lg"></i><b >配套</b>
+            <i class="fa fa-cogs "><b >配套</b></i>
         </a>
         <a href="<?php echo base_url("index.php/Mcontact");?>" class="btn btn-default">
-            <i class="fa fa-phone fa-fw fa-lg text-warning"></i><b >联系</b>
+            <i class="fa fa-phone  text-warning"><b >联系</b></i>
         </a>
         <a href="<?php echo base_url("index.php/Maddress");?>" class="btn btn-default">
-            <i class="fa fa-map-marker fa-fw fa-lg text-danger"></i><b>地址</b>
+            <i class="fa fa-map-marker  text-danger"><b>地址</b></i>
         </a>
     </div>
 </div>
@@ -68,11 +68,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <footer id="footer">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-12">
                 &copy;<b class="mobile_font_nor">2015<a target="_blank" href="#" title="虎门乐诚汽修">虎门乐诚汽修</a>.版权所有.</b>
-            </div>
-            <div class="col-sm-6">
-                <a href="#" class="pull-right"><b class="mobile_font_nor">技术支持jiatel@163.com</b></a>
 
             </div>
         </div>

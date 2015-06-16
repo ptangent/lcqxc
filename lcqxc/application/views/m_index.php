@@ -48,11 +48,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="container">
     <div class="page-header" id="banner" style="margin: 0px 0 22px;">
         <div class="row">
-            <div class="col-lg-10 col-md-6 col-sm-6">
-                <h1>虎门乐诚</h1>
+            <div class="col-lg-10 col-md-10 col-sm-10">
+                <h2>虎门乐诚</h2>
                 <p class="lead">敬业乐群-诚信经营</p>
             </div>
-            <div class="col-lg-2 col-md-6 col-sm-6 ">
+            <div class="col-lg-2 col-md-2 col-sm-2 ">
                 <div class="sponsor">
                     <a href="http://www.shopify.com/?ref=bootswatch" class="pull-right" target="_blank" onclick="_gaq.push(['_trackEvent', 'banner', 'click', 'shopify']);">
                         <img src="../assets/img/shopify.png" alt="Shopify" width="180" height="150" onload="_gaq.push(['_trackEvent', 'banner', 'impression', 'shopify']);">
@@ -97,7 +97,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                &copy; 2015 <a target="_blank" href="#" title="Free Twitter Bootstrap WordPress Themes and HTML templates">虎门乐诚汽修</a>. 版权所有.
+                &copy; 2015 <a target="_blank" href="#" title="虎门乐诚汽修">虎门乐诚汽修</a>.版权所有.
             </div>
             <div class="col-sm-6">
                 <a href="#" class="pull-right">技术支持jiatel@163.com</a>

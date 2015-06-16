@@ -9,7 +9,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     <link type="text/css" rel="stylesheet" href="<?php echo base_url("ui_ref/css/bootstrap_mobile.min.css"); ?>">
     <link type="text/css" rel="stylesheet" href="<?php echo base_url("ui_ref/css/font-awesome_official.min.css"); ?>">
-
 </head>
 
 <body>
@@ -42,19 +41,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="bs-component" style="margin-bottom: 15px;">
     <div class="btn-group btn-group-justified">
         <a href="<?php echo base_url("index.php/Mservice");?>" class="btn btn-default " >
-            <i class="fa fa-wrench fa-fw fa-lg text-primary"></i><b>服务</b>
+            <i class="fa fa-wrench  text-primary"><b>服务</b></i>
         </a>
         <a href="<?php echo base_url("index.php/Mintroduction");?>" class="btn btn-default">
-            <i class="fa fa-book fa-fw fa-lg text-info"></i><b>简介</b>
+            <i class="fa fa-book  text-info"><b>简介</b></i>
         </a>
         <a href="<?php echo base_url("index.php/Mhardware");?>" class="btn btn-default">
-            <i class="fa fa-cogs fa-fw fa-lg"></i><b >配套</b>
+            <i class="fa fa-cogs "><b >配套</b></i>
         </a>
         <a href="<?php echo base_url("index.php/Mcontact");?>" class="btn btn-default active">
-            <i class="fa fa-phone fa-fw fa-lg text-warning"></i><b >联系</b>
+            <i class="fa fa-phone  text-warning"><b >联系</b></i>
         </a>
         <a href="<?php echo base_url("index.php/Maddress");?>" class="btn btn-default">
-            <i class="fa fa-map-marker fa-fw fa-lg text-danger"></i><b>地址</b>
+            <i class="fa fa-map-marker  text-danger"><b>地址</b></i>
         </a>
     </div>
 </div>
@@ -62,25 +61,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="bs-component">
     <ul class="list-group">
         <li class="list-group-item">
-            <span class="badge"></span>
+            <span class="badge"><i class="fa fa-phone-square"></i></span>
             <b class="mobile_font_nor">
                 电话：0769-85224911
             </b>
         </li>
         <li class="list-group-item">
-            <span class="badge"></span>
+            <span class="badge"><i class="fa fa-envelope-square"></i></span>
             <b class="mobile_font_nor">
               邮箱：Zhouyu6699@live.com
             </b>
         </li>
         <li class="list-group-item">
-            <span class="badge"></span>
+            <span class="badge"><i class="fa fa-wechat"></i></span>
             <b class="mobile_font_nor">
-               微信：搜索公众号“乐诚汽车服务”（可在公众号留言和咨询）
+               微信：搜索公众号“乐诚汽车服务”（可留言与咨询）
             </b>
         </li>
         <li class="list-group-item">
-            <span class="badge"></span>
+            <span class="badge"><i class="fa fa-qq"></i></span>
             <b class="mobile_font_nor">
                 QQ：380914183
             </b>
@@ -91,13 +90,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <footer id="footer">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-12">
                 &copy;<b class="mobile_font_nor">2015<a target="_blank" href="#" title="虎门乐诚汽修">虎门乐诚汽修</a>.版权所有.</b>
-            </div>
-            <div class="col-sm-6">
-                <a href="#" class="pull-right"><b class="mobile_font_nor">技术支持jiatel@163.com</b></a>
 
             </div>
+
         </div>
         <div class="row">
             <div class="col-sm-12 center-block" style="text-align: center">
