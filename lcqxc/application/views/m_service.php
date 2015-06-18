@@ -66,12 +66,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <div class="bs-component">
     <ul class="nav nav-tabs">
-        <li class="active"><a href="#home" data-toggle="tab">机修</a></li>
+        <li class="active"><a href="#home" data-toggle="tab">机修&保养</a></li>
         <li><a href="#profile" data-toggle="tab">砂板&烤漆</a></li>
-        <li><a href="#profile" data-toggle="tab">办证&缴费</a></li>
+        <li><a href="#profile" data-toggle="tab">年审&缴费</a></li>
         <li><a href="#profile" data-toggle="tab">保险</a></li>
         <li><a href="#profile" data-toggle="tab">配件</a></li>
-
+        <li><a href="#profile" data-toggle="tab">其它</a></li>
     </ul>
     <div id="myTabContent" class="tab-content">
         <div class="tab-pane fade active in" id="home">
