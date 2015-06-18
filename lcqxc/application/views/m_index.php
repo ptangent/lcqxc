@@ -70,7 +70,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <blockquote>
                 <p>虎门乐诚汽修创办于<strong class="mobile_font_nor">1993</strong>年，专注服务于虎门汽车行业20余载，一直致力于为群众提供专业、优质、可靠的汽车服务。欢迎新老顾客咨询与光临.</p>
                 <small>营业时间：<strong class="mobile_font_nor">8:30-19:30</strong> <cite title="Source Title">（国家法定节假日除外）</cite></small>
-                <small>地址：<strong>虎门太沙路金洲段金捷路与太沙路交汇处</strong><cite title="Source Title">（下方查看详情）</cite></small>
+                <small>地址：<strong>虎门太沙路金洲段339号金捷路与太沙路交汇处</strong><cite title="Source Title">（下方查看详情）</cite></small>
                 <small>电话：<strong class="mobile_font_nor">0769-85224911</strong><cite title="Source Title">（下方查看详情）</cite></small>
             </blockquote>
             <div id="source-button" class="btn btn-primary btn-xs" style="display: none;">&lt; &gt;</div></div>

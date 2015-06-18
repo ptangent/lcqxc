@@ -15,6 +15,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <link type="text/css" rel="stylesheet" href="<?php echo base_url("ui_ref/css/prettyPhoto.css");?>">
     <link type="text/css" rel="stylesheet" href="<?php echo base_url("ui_ref/css/main.css");?>">
 
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url("ui_ref/css/font-awesome_official.min.css"); ?>">
 </head>
 
 
@@ -51,16 +52,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="item active">
             <div class="container">
                 <div class="carousel-content">
-                    <h1>Free Onepage Theme</h1>
-                    <p class="lead">Xeon is the best free onepage responsive theme available arround the globe<br>Download it right now for free</p>
+                    <h1>虎门乐诚汽修</h1>
+                    <p class="lead">敬业乐群-诚信经营<br>
+                        <small>营业时间：<strong class="mobile_font_nor">8:30-19:30</strong><cite title="Source Title">（国家法定节假日除外）</cite></small><br>
+                    <small>地址：<strong>虎门太沙路金洲段339号金捷路与太沙路交汇处</strong><cite title="Source Title">（下方查看详情）</cite></small><br>
+                    <small>电话：<strong class="mobile_font_nor">0769-85224911</strong><cite title="Source Title">（下方有其它方式）</cite></small>
+                    </p>
                 </div>
             </div>
         </div><!--/.item-->
         <div class="item">
             <div class="container">
                 <div class="carousel-content">
-                    <h1>ShapeBootstrap.net</h1>
-                    <p class="lead">Download free but 100% premium quaility twitter Bootstrap based WordPress and HTML themes <br>from shapebootstrap.net</p>
+                    <h1><i class="fa fa-wechat  text-success "></i>微信公众号“乐诚汽车服务”</a></h1>
+                    <p class="lead">专注服务虎门汽车行业20余载 <br>一直致力于为群众提供专业、优质、可靠的汽车服务</p>
                 </div>
             </div>
         </div><!--/.item-->
@@ -348,71 +353,45 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="box last">
             <div class="row">
                 <div class="col-sm-6">
-                    <h1>Contact Form</h1>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    <h1>联系方式</h1>
+                    <p>您可以通过以下方式联系我们</p>
                     <div class="status alert alert-success" style="display: none"></div>
-                    <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php" role="form">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" required="required" placeholder="Name">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" required="required" placeholder="Email address">
-                                </div>
-                            </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-phone-square fa-3x text-info"></i>电话：0769-85224911</a></li>
+                                <li><a href="#"><i class="fa fa-envelope-square fa-3x text-warning"></i>邮箱：Zhouyu6699@live.com</li>
+                                <li><a href="#"><i class="fa fa-wechat fa-2x text-success "></i>微信：搜索公众号“乐诚汽车服务”（可留言与咨询）</a></li>
+                                <li><a href="#"><i class="fa fa-qq fa-2x text-danger"></i> QQ：380914183</a></li>
+                            </ul>
                         </div>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Message"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-danger btn-lg">Send Message</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+
+                    </div>
                 </div><!--/.col-sm-6-->
                 <div class="col-sm-6">
-                    <h1>Our Address</h1>
+                    <h1><i class="fa fa-paw "></i>我们的地址</h1>
                     <div class="row">
                         <div class="col-md-6">
                             <address>
-                                <strong>Twitter, Inc.</strong><br>
-                                795 Folsom Ave, Suite 600<br>
-                                San Francisco, CA 94107<br>
-                                <abbr title="Phone">P:</abbr> (123) 456-7890
+                                <strong>虎门乐诚汽修</strong><br>
+                                虎门镇太沙路339号（金洲段）<br>
+                                （金捷路与太沙路交汇处）<br>
                             </address>
                         </div>
                         <div class="col-md-6">
                             <address>
-                                <strong>Twitter, Inc.</strong><br>
-                                795 Folsom Ave, Suite 600<br>
-                                San Francisco, CA 94107<br>
-                                <abbr title="Phone">P:</abbr> (123) 456-7890
+                                <strong> 百度地图：</strong><br>
+                                搜索“虎门乐诚汽修”<a href="http://map.baidu.com/?newmap=1&s=s%26wd%3D%25E4%25B8%259C%25E8%258E%259E%25E5%25B8%2582%25E8%2599%258E%25E9%2597%25A8%25E4%25B9%2590%25E8%25AF%259A%25E6%25B1%25BD%25E8%25BD%25A6%25E4%25BF%25AE%25E7%2590%2586%25E7%25AB%2599%26c%3D119%26b%3D(12654691.77%2C2590821.59%3B12657691.77%2C2593821.59)"><i class="icon-arrow-right"></i>（点击查看）</a>
+                                <br>
+                                全景图：<a href="http://j.map.baidu.com/QYOI3" ><i class="icon-arrow-right"></i>（点击查看）</a><br>
+<!--                                <abbr title="Phone">P:</abbr> (123) 456-7890-->
                             </address>
                         </div>
                     </div>
-                    <h1>Connect with us</h1>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <ul class="social">
-                                <li><a href="#"><i class="icon-facebook icon-social"></i> Facebook</a></li>
-                                <li><a href="#"><i class="icon-google-plus icon-social"></i> Google Plus</a></li>
-                                <li><a href="#"><i class="icon-pinterest icon-social"></i> Pinterest</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <ul class="social">
-                                <li><a href="#"><i class="icon-linkedin icon-social"></i> Linkedin</a></li>
-                                <li><a href="#"><i class="icon-twitter icon-social"></i> Twitter</a></li>
-                                <li><a href="#"><i class="icon-youtube icon-social"></i> Youtube</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    <h1>详细方位</h1>
+                    <img class="img-responsive" src="<?php echo base_url("ui_ref/images/location_nor.jpg"); ?>">
+                    <img class="img-responsive" src="<?php echo base_url("ui_ref/images/gate.jpg"); ?>">
                 </div><!--/.col-sm-6-->
             </div><!--/.row-->
         </div><!--/.box-->
