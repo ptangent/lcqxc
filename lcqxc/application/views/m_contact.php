@@ -31,7 +31,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">关注微信公众号</a></li>
+                    <li><a href="<?php echo base_url("index.php/ToMobile#qrcode"); ?>">关注微信公众号</a></li>
                 </ul>
             </div>
         </div>
@@ -72,17 +72,32 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               邮箱：Zhouyu6699@live.com
             </b>
         </li>
-        <li class="list-group-item">
-            <span class="badge"><i class="fa fa-wechat"></i></span>
-            <b class="mobile_font_nor">
-               微信：搜索公众号“乐诚汽车服务”（可留言与咨询）
-            </b>
-        </li>
+
         <li class="list-group-item">
             <span class="badge"><i class="fa fa-qq"></i></span>
             <b class="mobile_font_nor">
                 QQ：380914183
             </b>
+        </li>
+
+        <li class="list-group-item">
+            <span class="badge"><i class="fa fa-wechat"></i></span>
+            <b class="mobile_font_nor">
+                微信公众号：搜索“虎门乐诚汽车服务”（可留言与咨询）
+            </b>
+        </li>
+
+        <li class="list-group-item">
+            <div class="col-lg-12 col-md-12 col-sm-12 ">
+                <div class="sponsor">
+                    <a href="#"    >
+                        <img src="<?php echo base_url("ui_ref/images/qrcode.jpg"); ?>" alt="乐诚汽修" class="img-responsive center-block"  >
+                    </a>
+                </div>
+            </div>
+            <div class=" center-block" >
+                <p style="text-align: center">长按图片识别，或搜索公众号“虎门乐诚汽车服务”</p>
+            </div>
         </li>
     </ul>
 </div>

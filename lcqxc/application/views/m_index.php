@@ -16,7 +16,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 <div class="bs-component">
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="margin-bottom: 0px">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
@@ -36,7 +36,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!--                </ul>-->
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">关注微信公众号</a></li>
+                    <li><a href="#qrcode">关注微信公众号</a></li>
                 </ul>
             </div>
         </div>
@@ -46,18 +46,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 
 <div class="container">
-    <div class="page-header" id="banner" style="margin: 0px 0 22px;">
+    <div class="page-header" id="banner" style="margin: 50px 0 0 0;padding-bottom: 0">
         <div class="row">
-            <div class="col-lg-10 col-md-10 col-sm-10">
-                <h2>虎门乐诚</h2>
-                <p class="lead">敬业乐群-诚信经营</p>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 ">
-                <div class="sponsor">
-                    <a href="http://www.shopify.com/?ref=bootswatch" class="pull-right" target="_blank" onclick="_gaq.push(['_trackEvent', 'banner', 'click', 'shopify']);">
-                        <img src="../assets/img/shopify.png" alt="Shopify" width="180" height="150" onload="_gaq.push(['_trackEvent', 'banner', 'impression', 'shopify']);">
-                    </a>
-                </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 center-block">
+                <h3>虎门乐诚</h3>
+                <p class="lead">敬业乐群-诚信经营<br>
+                    为您提供专业、专注的汽车行业服务
+                </p>
             </div>
         </div>
     </div>
@@ -68,10 +63,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="col-lg-12">
         <div class="bs-component">
             <blockquote>
-                <p>虎门乐诚汽修创办于<strong class="mobile_font_nor">1993</strong>年，专注服务于虎门汽车行业20余载，一直致力于为群众提供专业、优质、可靠的汽车服务。欢迎新老顾客咨询与光临.</p>
                 <small>营业时间：<strong class="mobile_font_nor">8:30-19:30</strong> <cite title="Source Title">（国家法定节假日除外）</cite></small>
-                <small>地址：<strong>虎门太沙路金洲段339号金捷路与太沙路交汇处</strong><cite title="Source Title">（下方查看详情）</cite></small>
-                <small>电话：<strong class="mobile_font_nor">0769-85224911</strong><cite title="Source Title">（下方查看详情）</cite></small>
+                <small>地址：<strong class="mobile_font_nor">虎门太沙路金洲段339号金捷路与太沙路交汇处</strong><cite title="Source Title">（详见下方）</cite></small>
+                <small>电话：<strong class="mobile_font_nor">0769-85224911</strong><cite title="Source Title">（详见下方）</cite></small>
             </blockquote>
             <div id="source-button" class="btn btn-primary btn-xs" style="display: none;">&lt; &gt;</div></div>
     </div>
@@ -82,7 +76,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="list-group">
     <a class="list-group-item" href="<?php echo base_url("index.php/Mservice");?>"><i class="fa fa-wrench fa-fw fa-5x text-primary"></i>&nbsp;&nbsp;<b class="mobile_big_text">服务介绍</b> </a>
     <a class="list-group-item" href="<?php echo base_url("index.php/Mintroduction");?>"><i class="fa fa-book fa-fw fa-5x text-info"></i>&nbsp; &nbsp;<b class="mobile_big_text">企业简介</b></a>
-    <a class="list-group-item" href="<?php echo base_url("index.php/Mhardware");?>"><i class="fa fa-cogs fa-fw fa-5x"></i>&nbsp; &nbsp;<b class="mobile_big_text">配套&硬件</b></a>
+    <a class="list-group-item" href="<?php echo base_url("index.php/Mhardware");?>"><i class="fa fa-cogs fa-fw fa-5x"></i>&nbsp; &nbsp;<b class="mobile_big_text">相关配套</b></a>
     <a class="list-group-item" href="<?php echo base_url("index.php/Mcontact");?>">
         <i class="fa fa-phone fa-fw fa-5x text-warning"></i>&nbsp; &nbsp;<b class="mobile_big_text">联系方式</b>
     </a>
@@ -90,6 +84,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <i class="fa fa-map-marker fa-fw fa-5x text-danger"></i>&nbsp; &nbsp;<b class="mobile_big_text">详细地址</b>
     </a>
 </div>
+
+<section id="qrcode">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 ">
+            <div class="sponsor">
+                <a href="#"   >
+                    <img src="<?php echo base_url("ui_ref/images/qrcode.jpg"); ?>" alt="乐诚汽修" class="img-responsive center-block"  >
+                </a>
+            </div>
+        </div>
+        <div class=" center-block" >
+            <p style="text-align: center">长按图片识别，或搜索公众号“虎门乐诚汽车服务”</p>
+        </div>
+
+    </div>
+</section>
 
 
 
@@ -100,7 +110,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 &copy; 2015 <a target="_blank" href="#" title="虎门乐诚汽修">虎门乐诚汽修</a>.版权所有.
             </div>
             <div class="col-sm-6">
-                <a href="#" class="pull-right">技术支持jiatel@163.com</a>
+                <a href="#" class="center-block" style="text-align: center">技术支持jiatel@163.com</a>
 
             </div>
         </div>

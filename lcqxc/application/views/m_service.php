@@ -30,14 +30,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-                <!--                <ul class="nav navbar-nav">-->
-                <!--                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->
-                <!--                    <li><a href="#">Link</a></li>-->
-                <!---->
-                <!--                </ul>-->
+
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">关注微信公众号</a></li>
+                    <li><a href="<?php echo base_url("index.php/ToMobile#qrcode"); ?>">关注微信公众号</a></li>
                 </ul>
             </div>
         </div>
@@ -66,21 +62,64 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <div class="bs-component">
     <ul class="nav nav-tabs">
-        <li class="active"><a href="#home" data-toggle="tab">机修&保养</a></li>
-        <li><a href="#profile" data-toggle="tab">砂板&烤漆</a></li>
-        <li><a href="#profile" data-toggle="tab">年审&缴费</a></li>
-        <li><a href="#profile" data-toggle="tab">保险</a></li>
-        <li><a href="#profile" data-toggle="tab">配件</a></li>
-        <li><a href="#profile" data-toggle="tab">其它</a></li>
+        <li class="active"><a href="#home" data-toggle="tab">机修</a></li>
+        <li><a href="#dianlu" data-toggle="tab">电路</a></li>
+        <li><a href="#banjin" data-toggle="tab">钣金与喷漆</a></li>
+        <li><a href="#baoxian" data-toggle="tab">保险</a></li>
+        <li><a href="#peijian" data-toggle="tab">配件</a></li>
+        <li><a href="#qita" data-toggle="tab">其他</a></li>
     </ul>
     <div id="myTabContent" class="tab-content">
         <div class="tab-pane fade active in" id="home">
-            <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+            <a href="#" class="list-group-item">
+                <h4 class="list-group-item-heading">机修主要</h4>
+                <p class="list-group-item-text">发动机、波箱检测与维修，四轮保养，底盘悬挂检修，常规机油、三滤保养</p>
+            </a>
+
+            <img src="<?php echo base_url("ui_ref/images/jixiu.jpg"); ?>" class="img-responsive">
+
         </div>
-        <div class="tab-pane fade" id="profile">
-            <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
+        <div class="tab-pane fade" id="dianlu">
+            <a href="#" class="list-group-item">
+                <h4 class="list-group-item-heading">电路主要</h4>
+                <p class="list-group-item-text">发动机电子电路检测与维修，空调系统检测与维修，全车线路检测与维修，电脑编程与故障解码</p>
+            </a>
         </div>
 
+        <div class="tab-pane fade" id="banjin">
+            <a href="#" class="list-group-item">
+                <h4 class="list-group-item-heading">外观主要</h4>
+                <p class="list-group-item-text">事故车辆矫形，车身、车架修复，全车喷漆、局部补漆</p>
+            </a>
+
+            <img src="<?php echo base_url("ui_ref/images/banjin.jpg"); ?>" class="img-responsive">
+        </div>
+
+        <div class="tab-pane fade" id="baoxian">
+            <a href="#" class="list-group-item">
+                <h4 class="list-group-item-heading">保险主要</h4>
+                <p class="list-group-item-text">人保合作单位，车辆保险到期出单，车辆发生碰撞之后保险修车，代客提交资料</p>
+            </a>
+            <img src="<?php echo base_url("ui_ref/images/baoxian.jpg"); ?>" class="img-responsive">
+        </div>
+
+        <div class="tab-pane fade" id="peijian">
+            <a href="#" class="list-group-item">
+                <h4 class="list-group-item-heading">配件服务</h4>
+                <p class="list-group-item-text">代客订购配件，饰件</p>
+            </a>
+
+            <img src="<?php echo base_url("ui_ref/images/peijian.jpg"); ?>" class="img-responsive">
+        </div>
+
+        <div class="tab-pane fade" id="qita">
+            <a href="#" class="list-group-item">
+                <h4 class="list-group-item-heading">其他服务</h4>
+                <p class="list-group-item-text">代办汽车违章、年审、过户、车辆买卖，事故车辆外出抢修、拖车服务</p>
+            </a>
+
+            <img src="<?php echo base_url("ui_ref/images/daiban.jpg"); ?>" class="img-responsive">
+        </div>
     </div>
     </div>
 

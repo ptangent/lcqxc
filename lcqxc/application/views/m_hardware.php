@@ -37,7 +37,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <!--                </ul>-->
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">关注微信公众号</a></li>
+                    <li><a href="<?php echo base_url("index.php/ToMobile#qrcode"); ?>">关注微信公众号</a></li>
                 </ul>
             </div>
         </div>
@@ -61,6 +61,64 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <a href="<?php echo base_url("index.php/Maddress");?>" class="btn btn-default">
             <i class="fa fa-map-marker  text-danger"><b>地址</b></i>
         </a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="page-header">
+            <h1 id="tables">人员-配套-设施</h1>
+        </div>
+
+        <div class="bs-component">
+            <table class="table table-striped table-hover ">
+                <thead>
+                <tr>
+                    <th>设施</th>
+                    <th>简述</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="active">
+                    <td>人员</td>
+                    <td>由拥有不同范畴的专业人员组成的技术团队</td>
+
+                </tr>
+                <tr>
+                    <td>停车&WiFi</td>
+                    <td>免费提供</td>
+
+                </tr>
+                <tr>
+                    <td>检测设备</td>
+                    <td><img src="<?php echo base_url("ui_ref/images/hardware1.jpg"); ?>" class="img-responsive"></td>
+
+                </tr>
+                <tr class="info">
+                    <td>升降设备</td>
+                    <td><img src="<?php echo base_url("ui_ref/images/hardware2.jpg"); ?>" class="img-responsive"></td>
+
+                </tr>
+                <tr class="success">
+                    <td>检测电脑</td>
+                    <td><img src="<?php echo base_url("ui_ref/images/hardware3.jpg"); ?>" class="img-responsive"></td>
+
+                </tr>
+                <tr class="danger">
+                    <td>烤漆房</td>
+                    <td><img src="<?php echo base_url("ui_ref/images/hardware4.jpg"); ?>" class="img-responsive"></td>
+
+                </tr>
+                <tr class="warning">
+                    <td>休息室</td>
+                    <td><img src="<?php echo base_url("ui_ref/images/hardware5.jpg"); ?>" class="img-responsive"></td>
+
+                </tr>
+
+                </tbody>
+            </table>
+            <div id="source-button" class="btn btn-primary btn-xs" style="display: none;">&lt; &gt;</div></div><!-- /example -->
     </div>
 </div>
 
