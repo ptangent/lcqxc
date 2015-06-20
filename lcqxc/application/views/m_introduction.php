@@ -69,14 +69,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <a href="#" class="list-group-item">
             <h4 class="list-group-item-heading">过去</h4>
             <p class="list-group-item-text">
-                虎门乐诚汽修创办于<strong class="mobile_font_nor">1993</strong>年，虎门乐诚汽修至今已经服务虎门汽车行业20余载。虎门乐诚拥有今时今日的发展，全赖老顾客的鼎力支持。<br>
+                虎门乐诚汽修创办于<strong class="mobile_font_nor">1993</strong>年，至今已经服务虎门汽车行业20余载。乐诚拥有今时今日的发展，全赖老顾客的鼎力支持。<br>
             </p>
 
         </a>
         <a href="#" class="list-group-item">
             <h4 class="list-group-item-heading">变迁与不变</h4>
             <p class="list-group-item-text">
-                20年来，从太沙路扩建到金捷路开通，再到连升南路兴建，由于土地征收，乐诚也经历几次搬迁与升级（一直在太沙路)，唯一不变的是乐诚与虎门车友们的联系。<br>
+                20年来，从太沙路扩建到金捷路开通，再到连升南路兴建，由于土地征收，乐诚也经历几次搬迁与升级（一直在太沙路)，但唯一不变的是乐诚与虎门车友们的联系。<br>
 
             </p>
         </a>

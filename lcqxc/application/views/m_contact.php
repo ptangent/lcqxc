@@ -76,7 +76,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <li class="list-group-item">
             <span class="badge"><i class="fa fa-qq"></i></span>
             <b class="mobile_font_nor">
-                QQ：380914183
+                QQ：380914183（备注“汽车业务咨询”）
             </b>
         </li>
 
