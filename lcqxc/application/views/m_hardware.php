@@ -74,46 +74,60 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <table class="table table-striped table-hover ">
                 <thead>
                 <tr>
-                    <th>设施</th>
-                    <th>简述</th>
+                    <th>设施&简述</th>
+
 
                 </tr>
                 </thead>
                 <tbody>
                 <tr class="active">
-                    <td>人员</td>
+                    <td class="tac">人员</td>
+
+
+                </tr>
+                <tr>
                     <td>由拥有不同范畴的专业人员组成的技术团队</td>
+                </tr>
+                <tr>
+                    <td class="tac">停车&WiFi</td>
 
                 </tr>
                 <tr>
-                    <td>停车&WiFi</td>
                     <td>免费提供</td>
+                </tr>
+
+                <tr>
+                    <td class="tac">检测设备</td>
 
                 </tr>
                 <tr>
-                    <td>检测设备</td>
                     <td><img src="<?php echo base_url("ui_ref/images/hardware1.jpg"); ?>" class="img-responsive"></td>
-
                 </tr>
                 <tr class="info">
-                    <td>升降设备</td>
+                    <td class="tac">升降设备</td>
+                </tr>
+                <tr class="info">
                     <td><img src="<?php echo base_url("ui_ref/images/hardware2.jpg"); ?>" class="img-responsive"></td>
-
                 </tr>
                 <tr class="success">
-                    <td>检测电脑</td>
+                    <td class="tac">检测电脑</td>
+                </tr>
+                <tr class="success">
                     <td><img src="<?php echo base_url("ui_ref/images/hardware3.jpg"); ?>" class="img-responsive"></td>
+                </tr>
 
+                <tr class="danger">
+                    <td class="tac">烤漆房</td>
                 </tr>
                 <tr class="danger">
-                    <td>烤漆房</td>
                     <td><img src="<?php echo base_url("ui_ref/images/hardware4.jpg"); ?>" class="img-responsive"></td>
+                </tr>
 
+                <tr class="warning">
+                    <td class="tac">休息室</td>
                 </tr>
                 <tr class="warning">
-                    <td>休息室</td>
                     <td><img src="<?php echo base_url("ui_ref/images/hardware5.jpg"); ?>" class="img-responsive"></td>
-
                 </tr>
 
                 </tbody>

@@ -228,7 +228,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <h5>门面</h5>
                     </div>
                 </li><!--/.portfolio-item-->
-
+                <li class="portfolio-item joomla html">
+                    <div class="item-inner">
+                        <div class="portfolio-image">
+                            <img src="<?php echo base_url("ui_ref/images/gate_night.jpg"); ?>" alt="">
+                            <div class="overlay">
+                                <a class="preview btn btn-danger" title="门面2" href="<?php echo base_url("ui_ref/images/gate_night.jpg"); ?>"><i class="icon-eye-open"></i></a>
+                            </div>
+                        </div>
+                        <h5>门面2</h5>
+                    </div>
+                </li><!--/.portfolio-item-->
             </ul>
         </div><!--/.box-->
     </div><!--/.container-->
