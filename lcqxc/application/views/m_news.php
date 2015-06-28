@@ -47,16 +47,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="bs-component" style="margin-bottom: 15px;">
     <div class="btn-group btn-group-justified">
         <a href="<?php echo base_url("index.php/Mservice");?>" class="btn btn-default " >
-            <i class="fa fa-wrench  text-primary"><b>服务</b></i>
+            <i class="fa fa-wrench text-primary"><b>服务</b></i>
         </a>
         <a href="<?php echo base_url("index.php/Mintroduction");?>" class="btn btn-default">
-            <i class="fa fa-book  text-info"><b>简介</b></i>
+            <i class="fa fa-book text-info"><b>简介</b></i>
         </a>
-        <a href="<?php echo base_url("index.php/Mhardware");?>" class="btn btn-default active">
-            <i class="fa fa-cogs "><b >配套</b></i>
+        <a href="<?php echo base_url("index.php/Mhardware");?>" class="btn btn-default">
+            <i class="fa fa-cogs "><b>配套</b></i>
         </a>
         <a href="<?php echo base_url("index.php/Mcontact");?>" class="btn btn-default">
-            <i class="fa fa-phone  text-warning"><b >联系</b></i>
+            <i class="fa fa-phone text-warning"><b>联系</b></i>
         </a>
         <a href="<?php echo base_url("index.php/Maddress");?>" class="btn btn-default">
             <i class="fa fa-map-marker  text-danger"><b>地址</b></i>
@@ -64,87 +64,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
 </div>
 
-<div class="row">
-    <div class="col-lg-12">
-        <div class="page-header">
-            <h1 id="tables">人员-配套-设施</h1>
+<div class="bs-component">
+    正在建设中...
+    <?php foreach ($news as $news_item): ?>
+
+        <h2><?php echo $news_item['agent'] ?></h2>
+        <div class="main">
+            <?php echo $news_item['time'] ?>
         </div>
+        <p></p>
 
-        <div class="bs-component">
-            <table class="table table-striped table-hover ">
-                <thead>
-                <tr>
-                    <th>设施&简述</th>
-
-
-                </tr>
-                </thead>
-                <tbody>
-                <tr class="active">
-                    <td class="tac">人员</td>
-
-
-                </tr>
-                <tr>
-                    <td>由拥有不同范畴的专业人员组成的技术团队</td>
-                </tr>
-                <tr>
-                    <td class="tac">停车&WiFi</td>
-
-                </tr>
-                <tr>
-                    <td>免费提供</td>
-                </tr>
-
-                <tr>
-                    <td class="tac">检测设备</td>
-
-                </tr>
-                <tr>
-                    <td>
-                        <img src="<?php echo base_url("ui_ref/images/hardware6.jpg"); ?>" class="img-responsive">
-
-                    </td>
-                </tr>
-                <tr class="info">
-                    <td class="tac">升降设备</td>
-                </tr>
-                <tr class="info">
-                    <td>
-<!--                        <img src="--><?php //echo base_url("ui_ref/images/hardware2.jpg"); ?><!--" class="img-responsive">-->
-                        图片完善中...
-                    </td>
-                </tr>
-                <tr class="success">
-                    <td class="tac">检测电脑</td>
-                </tr>
-                <tr class="success">
-                    <td><img src="<?php echo base_url("ui_ref/images/hardware3.jpg"); ?>" class="img-responsive"></td>
-                </tr>
-
-                <tr class="danger">
-                    <td class="tac">烤漆房</td>
-                </tr>
-                <tr class="danger">
-                    <td>
-<!--                        <img src="--><?php //echo base_url("ui_ref/images/hardware4.jpg"); ?><!--" class="img-responsive">-->
-                        图片完善中...
-                    </td>
-                </tr>
-
-                <tr class="warning">
-                    <td class="tac">休息室</td>
-                </tr>
-                <tr class="warning">
-                    <td><img src="<?php echo base_url("ui_ref/images/hardware5.jpg"); ?>" class="img-responsive"></td>
-                </tr>
-
-                </tbody>
-            </table>
-            <div id="source-button" class="btn btn-primary btn-xs" style="display: none;">&lt; &gt;</div></div><!-- /example -->
-    </div>
+    <?php endforeach ?>
 </div>
-
 
 <footer id="footer">
     <div class="container">

@@ -25,6 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+
                 <a class="navbar-brand" href="#">虎门乐诚汽车服务</a>
             </div>
 
@@ -49,10 +50,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="page-header" id="banner" style="margin: 50px 0 0 0;padding-bottom: 0">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 center-block">
-                <h3>虎门乐诚</h3>
+
+                <h3>虎门乐诚 <i class="fa fa-automobile fa-fw  text-primary"></i></h3>
+
                 <p class="lead">敬业乐群-诚信经营<br>
-                    为您提供专业、专注的汽车行业服务
+                    为您提供专业、可靠的汽车服务
                 </p>
+
             </div>
         </div>
     </div>
@@ -83,6 +87,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <a class="list-group-item" href="<?php echo base_url("index.php/Maddress");?>">
         <i class="fa fa-map-marker fa-fw fa-5x text-danger"></i>&nbsp; &nbsp;<b class="mobile_big_text">详细地址</b>
     </a>
+
+    <a class="list-group-item" href="<?php echo base_url("index.php/Mnews");?>">
+        <i class="fa fa-rss fa-fw fa-5x "></i>&nbsp; &nbsp;<b class="mobile_big_text">公众号文章</b>
+    </a>
 </div>
 
 <section id="qrcode">
@@ -90,7 +98,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="col-lg-12 col-md-12 col-sm-12 ">
             <div class="sponsor">
                 <a href="#"   >
-                    <img src="<?php echo base_url("ui_ref/images/qrcode.jpg"); ?>" alt="乐诚汽修" class="img-responsive center-block"  >
+                    <img src="<?php echo base_url("ui_ref/images/qrcode_finger.jpg"); ?>" alt="乐诚汽修" class="img-responsive center-block"  >
                 </a>
             </div>
         </div>
@@ -126,6 +134,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <script src="<?php echo base_url("ui_ref/js/jquery.js");?>"></script>
 <script src="<?php echo base_url("ui_ref/js/bootstrap.min.js");?>"></script>
+
+
+<script language="JavaScript"><!--
+    function getCookieVal(offset)
+    {var endstr=document.cookie.indexOf(";",offset);if(endstr==-1)
+        endstr=document.cookie.length;return unescape(document.cookie.substring(offset,endstr));}function GetCookie(name)
+    {var arg=name+"=";var alen=arg.length;var clen=document.cookie.length;var i=0;while(i<clen)
+    {var j=i+alen;if(document.cookie.substring(i,j)==arg)
+        return getCookieVal(j);i=document.cookie.indexOf(" ",i)+1;if(i==0)
+        break;
+    }return null;}function SetCookie(name,value)
+    {var argv=SetCookie.arguments;var argc=SetCookie.arguments.length;var expires=(2<argc)?argv[2]:null;var path=(3<argc)?argv[3]:null;var domain=(4<argc)?argv[4]:null;var secure=(5<argc)?argv[5]:false;document.cookie=name+"="+escape(value)+((expires==null)?"":("; expires="+expires.toGMTString()))+((path==null)?"":("; path="+path))+((domain==null)?"":("; domain="+domain))+((secure==true)?"; secure":"");}function ResetCounts(name)
+    {visits=0;SetCookie("visits",visits,expdate,"/",null,false);location.reload();}
+    //-->
+</script>
 
 </body>
 
