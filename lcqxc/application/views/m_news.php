@@ -26,7 +26,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="<?php echo base_url("index.php/ToMobile"); ?>" class="navbar-brand" href="#"><i class="fa fa-home fa-fw "></i>返回首页</a>
+                <a href="<?php echo base_url("index.php/ToMobile"); ?>" class="navbar-brand" ><i class="fa fa-home fa-fw "></i>返回首页</a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
@@ -65,17 +65,47 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 
 <div class="bs-component">
-    正在建设中...
-    <?php foreach ($news as $news_item): ?>
 
-        <h2><?php echo $news_item['agent'] ?></h2>
-        <div class="main">
-            <?php echo $news_item['time'] ?>
-        </div>
-        <p></p>
+
+    <ul class="breadcrumb">
+        <li><a href="<?php echo base_url("index.php/ToMobile"); ?>">首页</a></li>
+        <li class="active">公众号文章列表</li>
+    </ul>
+
+
+</div>
+
+<div class="bs-component">
+    <div class="list-group">
+    <?php foreach ($news as $news_item): ?>
+        <li class="list-group-item">
+            <span class="badge"><?php echo $news_item['time'] ?></span>
+            <span class="label label-success"><?php echo $news_item['id'] ?></span>&nbsp;
+            作者:<?php echo $news_item['author'] ?>&nbsp;
+            阅读:<?php echo $news_item['count'] ?>
+        </li>
+        <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading"><?php echo $news_item['title'] ?></h4>
+            <p class="list-group-item-text"> <?php echo $news_item['content'] ?></p>
+        </a>
+
 
     <?php endforeach ?>
+    </div>
 </div>
+
+
+
+
+<ul class="pagination pagination-lg">
+<!--    <li class="disabled"><a href="#">«</a></li>-->
+<!--    <li class="active"><a href="#">1</a></li>-->
+<!--    <li><a href="#">2</a></li>-->
+<!--    <li><a href="#">»</a></li>-->
+    <?php echo $this->pagination->create_links(); ?>
+</ul>
+
+
 
 <footer id="footer">
     <div class="container">
