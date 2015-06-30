@@ -75,6 +75,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 </div>
 
+
+
+
 <div class="bs-component">
     <div class="list-group">
     <?php foreach ($news as $news_item): ?>
@@ -84,9 +87,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             作者:<?php echo $news_item['author'] ?>&nbsp;
             阅读:<?php echo $news_item['count'] ?>
         </li>
-        <a href="#" class="list-group-item">
+        <a href="<?php echo base_url().'index.php/Mnewsdetail/index/'. $news_item['id'] ?>" class="list-group-item">
             <h4 class="list-group-item-heading"><?php echo $news_item['title'] ?></h4>
-            <p class="list-group-item-text"> <?php echo $news_item['content'] ?></p>
+            <p class="list-group-item-text">
+                <?php
+                    if(strlen($news_item['summary'])>2){
+                        echo $news_item['summary'];
+                    }else{
+                        //strip_tags(
+                        echo  mb_strcut($news_item['content'],0,100)."&hellip;";
+                    }
+                ?>
+            </p>
         </a>
 
 
@@ -96,15 +108,31 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 
-
-<ul class="pagination pagination-lg">
+<div class="bs-component">
+<ul class="pagination pagination-lg " style="margin-left: 5px;">
 <!--    <li class="disabled"><a href="#">«</a></li>-->
 <!--    <li class="active"><a href="#">1</a></li>-->
 <!--    <li><a href="#">2</a></li>-->
 <!--    <li><a href="#">»</a></li>-->
     <?php echo $this->pagination->create_links(); ?>
 </ul>
+</div>
 
+<section id="qrcode">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 ">
+            <div class="sponsor">
+                <a href="#"   >
+                    <img src="<?php echo base_url("ui_ref/images/qrcode_finger.jpg"); ?>" alt="乐诚汽修" class="img-responsive center-block"  >
+                </a>
+            </div>
+        </div>
+        <div class=" center-block" >
+            <p style="text-align: center">长按图片识别，或搜索公众号“虎门乐诚汽车服务”</p>
+        </div>
+
+    </div>
+</section>
 
 
 <footer id="footer">

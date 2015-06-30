@@ -30,8 +30,10 @@ class Welcome extends CI_Controller {
 	{   log_message('error', 'mobiletest'.(int)isMobile());
 
         $this->pageviewmodel->set_pvs();
+
+        $data['pv']=$this->pageviewmodel->get_count();
 		if(isMobile()){
-            $this->load->view('m_index');
+            $this->load->view('m_index',$data);
         }else{
             $this->load->view('index');
         }

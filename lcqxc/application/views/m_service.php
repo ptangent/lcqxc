@@ -33,7 +33,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="<?php echo base_url("index.php/ToMobile#qrcode"); ?>">关注微信公众号</a></li>
+                    <li><a href="<?php echo base_url("index.php/Mnews#qrcode"); ?>">关注微信公众号</a></li>
                 </ul>
             </div>
         </div>
@@ -84,6 +84,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <h4 class="list-group-item-heading">电路主要</h4>
                 <p class="list-group-item-text">发动机电子电路检测与维修，空调系统检测与维修，全车线路检测与维修，电脑编程与故障解码</p>
             </a>
+            <a href="<?php echo base_url("index.php/Mcircuit"); ?>" class="btn btn-primary center-block">查看案例</a>
+            <img src="<?php echo base_url("ui_ref/images/dianlu.jpg"); ?>" class="img-responsive">
         </div>
 
         <div class="tab-pane fade" id="banjin">
@@ -91,7 +93,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <h4 class="list-group-item-heading">外观主要</h4>
                 <p class="list-group-item-text">事故车辆矫形，车身、车架修复，全车喷漆、局部补漆</p>
             </a>
-
+            <a href="<?php echo base_url("index.php/Mappearance"); ?>" class="btn btn-primary center-block">查看案例</a>
             <img src="<?php echo base_url("ui_ref/images/banjin.jpg"); ?>" class="img-responsive">
         </div>
 

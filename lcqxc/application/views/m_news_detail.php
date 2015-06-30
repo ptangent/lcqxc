@@ -26,7 +26,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="<?php echo base_url("index.php/ToMobile"); ?>" class="navbar-brand" href="#"><i class="fa fa-home fa-fw "></i>返回首页</a>
+                <a href="<?php echo base_url("index.php/ToMobile"); ?>" class="navbar-brand" ><i class="fa fa-home fa-fw "></i>返回首页</a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
@@ -37,7 +37,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <!--                </ul>-->
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="<?php echo base_url("index.php/Mnews#qrcode"); ?>">关注微信公众号</a></li>
+                    <li><a href="<?php echo base_url("index.php/ToMobile#qrcode"); ?>">关注微信公众号</a></li>
                 </ul>
             </div>
         </div>
@@ -58,36 +58,53 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <a href="<?php echo base_url("index.php/Mcontact");?>" class="btn btn-default">
             <i class="fa fa-phone text-warning"><b>联系</b></i>
         </a>
-        <a href="<?php echo base_url("index.php/Maddress");?>" class="btn btn-default active">
+        <a href="<?php echo base_url("index.php/Maddress");?>" class="btn btn-default">
             <i class="fa fa-map-marker  text-danger"><b>地址</b></i>
         </a>
     </div>
 </div>
 
 <div class="bs-component">
-    <ul class="list-group">
-        <li class="list-group-item">
-            <span class="badge"><i class="fa fa-paw"></i></span>
-            <b class="mobile_font_nor">
-               百度地图：搜索“虎门乐诚汽修”<a href="http://map.baidu.com/?newmap=1&s=s%26wd%3D%25E4%25B8%259C%25E8%258E%259E%25E5%25B8%2582%25E8%2599%258E%25E9%2597%25A8%25E4%25B9%2590%25E8%25AF%259A%25E6%25B1%25BD%25E8%25BD%25A6%25E4%25BF%25AE%25E7%2590%2586%25E7%25AB%2599%26c%3D119%26b%3D(12654691.77%2C2590821.59%3B12657691.77%2C2593821.59)">（点击查看）</a>
-            </b>
-        </li>
-        <li class="list-group-item">
-            <span class="badge"><i class="fa fa-file-photo-o"></i></span>
-            <b class="mobile_font_nor">
-                全景图：<a href="http://j.map.baidu.com/QYOI3" >点击查看</a>（尽量在WiFi下）
-            </b>
-        </li>
-        <li class="list-group-item">
-            <span class="badge"><i class="fa fa-location-arrow"></i></span>
-            <b class="mobile_font_nor">
-                详细方位：虎门镇太沙路339号金洲段，太沙路与金捷路交汇红绿灯处，靠近角苏村虎门大桥高速桥底
-            </b>
-            <img class="img-responsive" src="<?php echo base_url("ui_ref/images/location_zip.jpg"); ?>">
-            <img class="img-responsive" src="<?php echo base_url("ui_ref/images/gate_zip.jpg"); ?>">
-        </li>
+
+
+    <ul class="breadcrumb">
+        <li><a href="<?php echo base_url("index.php/ToMobile"); ?>">首页</a></li>
+        <li ><a href="<?php echo base_url("index.php/Mnews");?>">公众号文章列表</a></li>
+        <li class="active">内容</li>
     </ul>
+
+
 </div>
+
+<div class="bs-component">
+    <div class="list-group">
+
+        <li class="list-group-item">
+            <span class="badge"><?php echo $news['time'] ?></span>
+            <span class="label label-success"><?php echo $news['id'] ?></span>&nbsp;
+            作者:<?php echo $news['author'] ?>&nbsp;
+            阅读:<?php echo $news['count'] ?>
+        </li>
+        <a href="#" class="list-group-item">
+            <h2 class="list-group-item-heading"><?php echo $news['title'] ?></h2>
+            <?php
+            $str=base_url( $news['images']);
+                if($str!=null){
+                    echo  "<img src='".base_url( $news['images'])."' class='img-responsive'>";
+                }
+            ?>
+
+            <p class="list-group-item-text"> <strong><?php echo $news['content'] ?></strong></p>
+        </a>
+
+
+
+    </div>
+</div>
+
+
+
+
 
 <footer id="footer">
     <div class="container">

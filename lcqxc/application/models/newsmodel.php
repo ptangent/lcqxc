@@ -22,5 +22,20 @@ class Newsmodel extends CI_Model {
         return $query->row_array();
     }
 
+    public function get_newsbyid($newId){
+
+        $this->db->where('id', $newId);
+        $query = $this->db->get( self::TBL_NEWS);
+
+        return $query->row_array();
+    }
+
+    public function update_count($newId){
+
+        $this->db->where('id', $newId);
+        $this->db->set('count', 'count+1', false);
+        $this->db->update(self::TBL_NEWS);
+        return null;
+    }
 }
 ?>

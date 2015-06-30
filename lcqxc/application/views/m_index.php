@@ -37,7 +37,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!--                </ul>-->
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#qrcode">关注微信公众号</a></li>
+<!--                    <li><a href="#qrcode">关注微信公众号</a></li>-->
+                        <li><a href="<?php echo base_url("index.php/Mnews#qrcode"); ?>">关注微信公众号</a></li>
                 </ul>
             </div>
         </div>
@@ -78,18 +79,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 <div class="list-group">
-    <a class="list-group-item" href="<?php echo base_url("index.php/Mservice");?>"><i class="fa fa-wrench fa-fw fa-5x text-primary"></i>&nbsp;&nbsp;<b class="mobile_big_text">服务介绍</b> </a>
-    <a class="list-group-item" href="<?php echo base_url("index.php/Mintroduction");?>"><i class="fa fa-book fa-fw fa-5x text-info"></i>&nbsp; &nbsp;<b class="mobile_big_text">企业简介</b></a>
-    <a class="list-group-item" href="<?php echo base_url("index.php/Mhardware");?>"><i class="fa fa-cogs fa-fw fa-5x"></i>&nbsp; &nbsp;<b class="mobile_big_text">相关配套</b></a>
+    <a class="list-group-item" href="<?php echo base_url("index.php/Mservice");?>"><i class="fa fa-wrench fa-fw fa-4x text-primary"></i>&nbsp;&nbsp;<b class="mobile_big_text">服务介绍</b> </a>
+    <a class="list-group-item" href="<?php echo base_url("index.php/Mintroduction");?>"><i class="fa fa-book fa-fw fa-4x text-info"></i>&nbsp; &nbsp;<b class="mobile_big_text">企业简介</b></a>
+    <a class="list-group-item" href="<?php echo base_url("index.php/Mhardware");?>"><i class="fa fa-cogs fa-fw fa-4x"></i>&nbsp; &nbsp;<b class="mobile_big_text">相关配套</b></a>
     <a class="list-group-item" href="<?php echo base_url("index.php/Mcontact");?>">
-        <i class="fa fa-phone fa-fw fa-5x text-warning"></i>&nbsp; &nbsp;<b class="mobile_big_text">联系方式</b>
+        <i class="fa fa-phone fa-fw fa-4x text-warning"></i>&nbsp; &nbsp;<b class="mobile_big_text">联系方式</b>
     </a>
     <a class="list-group-item" href="<?php echo base_url("index.php/Maddress");?>">
-        <i class="fa fa-map-marker fa-fw fa-5x text-danger"></i>&nbsp; &nbsp;<b class="mobile_big_text">详细地址</b>
+        <i class="fa fa-map-marker fa-fw fa-4x text-danger"></i>&nbsp; &nbsp;<b class="mobile_big_text">详细地址</b>
     </a>
 
     <a class="list-group-item" href="<?php echo base_url("index.php/Mnews");?>">
-        <i class="fa fa-rss fa-fw fa-5x "></i>&nbsp; &nbsp;<b class="mobile_big_text">公众号文章</b>
+        <i class="fa fa-rss fa-fw fa-4x "></i>&nbsp; &nbsp;<b class="mobile_big_text">公众号文章</b>
     </a>
 </div>
 
@@ -115,10 +116,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                &copy; 2015 <a target="_blank" href="#" title="虎门乐诚汽修">虎门乐诚汽修</a>.版权所有.
+                &copy; 2015 <a target="_blank" href="#" title="虎门乐诚汽修">虎门乐诚汽修</a>.版权所有.&nbsp;&nbsp;&nbsp;&nbsp;<span class="label label-info">浏览:<?php echo $pv;?></span>
             </div>
             <div class="col-sm-6">
                 <a href="#" class="center-block" style="text-align: center">技术支持jiatel@163.com</a>
+
 
             </div>
         </div>
@@ -136,19 +138,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <script src="<?php echo base_url("ui_ref/js/bootstrap.min.js");?>"></script>
 
 
-<script language="JavaScript"><!--
-    function getCookieVal(offset)
-    {var endstr=document.cookie.indexOf(";",offset);if(endstr==-1)
-        endstr=document.cookie.length;return unescape(document.cookie.substring(offset,endstr));}function GetCookie(name)
-    {var arg=name+"=";var alen=arg.length;var clen=document.cookie.length;var i=0;while(i<clen)
-    {var j=i+alen;if(document.cookie.substring(i,j)==arg)
-        return getCookieVal(j);i=document.cookie.indexOf(" ",i)+1;if(i==0)
-        break;
-    }return null;}function SetCookie(name,value)
-    {var argv=SetCookie.arguments;var argc=SetCookie.arguments.length;var expires=(2<argc)?argv[2]:null;var path=(3<argc)?argv[3]:null;var domain=(4<argc)?argv[4]:null;var secure=(5<argc)?argv[5]:false;document.cookie=name+"="+escape(value)+((expires==null)?"":("; expires="+expires.toGMTString()))+((path==null)?"":("; path="+path))+((domain==null)?"":("; domain="+domain))+((secure==true)?"; secure":"");}function ResetCounts(name)
-    {visits=0;SetCookie("visits",visits,expdate,"/",null,false);location.reload();}
-    //-->
-</script>
 
 </body>
 

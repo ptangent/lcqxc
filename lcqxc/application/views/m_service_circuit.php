@@ -30,14 +30,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-                <!--                <ul class="nav navbar-nav">-->
-                <!--                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->
-                <!--                    <li><a href="#">Link</a></li>-->
-                <!---->
-                <!--                </ul>-->
+
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="<?php echo base_url("index.php/Mnews#qrcode"); ?>">关注微信公众号</a></li>
+                    <li><a href="<?php echo base_url("index.php/ToMobile#qrcode"); ?>">关注微信公众号</a></li>
                 </ul>
             </div>
         </div>
@@ -46,48 +42,53 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 <div class="bs-component" style="margin-bottom: 15px;">
     <div class="btn-group btn-group-justified">
-        <a href="<?php echo base_url("index.php/Mservice");?>" class="btn btn-default " >
-            <i class="fa fa-wrench text-primary"><b>服务</b></i>
+        <a href="<?php echo base_url("index.php/Mservice");?>" class="btn btn-default active" >
+            <i class="fa fa-wrench  text-primary"><b>服务</b></i>
         </a>
         <a href="<?php echo base_url("index.php/Mintroduction");?>" class="btn btn-default">
-            <i class="fa fa-book text-info"><b>简介</b></i>
+            <i class="fa fa-book  text-info"><b>简介</b></i>
         </a>
         <a href="<?php echo base_url("index.php/Mhardware");?>" class="btn btn-default">
-            <i class="fa fa-cogs "><b>配套</b></i>
+            <i class="fa fa-cogs "><b >配套</b></i>
         </a>
         <a href="<?php echo base_url("index.php/Mcontact");?>" class="btn btn-default">
-            <i class="fa fa-phone text-warning"><b>联系</b></i>
+            <i class="fa fa-phone  text-warning"><b >联系</b></i>
         </a>
-        <a href="<?php echo base_url("index.php/Maddress");?>" class="btn btn-default active">
-            <i class="fa fa-map-marker  text-danger"><b>地址</b></i>
+        <a href="<?php echo base_url("index.php/Maddress");?>" class="btn btn-default">
+            <i class="fa fa-map-marker text-danger"><b>地址</b></i>
         </a>
     </div>
 </div>
 
 <div class="bs-component">
-    <ul class="list-group">
-        <li class="list-group-item">
-            <span class="badge"><i class="fa fa-paw"></i></span>
-            <b class="mobile_font_nor">
-               百度地图：搜索“虎门乐诚汽修”<a href="http://map.baidu.com/?newmap=1&s=s%26wd%3D%25E4%25B8%259C%25E8%258E%259E%25E5%25B8%2582%25E8%2599%258E%25E9%2597%25A8%25E4%25B9%2590%25E8%25AF%259A%25E6%25B1%25BD%25E8%25BD%25A6%25E4%25BF%25AE%25E7%2590%2586%25E7%25AB%2599%26c%3D119%26b%3D(12654691.77%2C2590821.59%3B12657691.77%2C2593821.59)">（点击查看）</a>
-            </b>
-        </li>
-        <li class="list-group-item">
-            <span class="badge"><i class="fa fa-file-photo-o"></i></span>
-            <b class="mobile_font_nor">
-                全景图：<a href="http://j.map.baidu.com/QYOI3" >点击查看</a>（尽量在WiFi下）
-            </b>
-        </li>
-        <li class="list-group-item">
-            <span class="badge"><i class="fa fa-location-arrow"></i></span>
-            <b class="mobile_font_nor">
-                详细方位：虎门镇太沙路339号金洲段，太沙路与金捷路交汇红绿灯处，靠近角苏村虎门大桥高速桥底
-            </b>
-            <img class="img-responsive" src="<?php echo base_url("ui_ref/images/location_zip.jpg"); ?>">
-            <img class="img-responsive" src="<?php echo base_url("ui_ref/images/gate_zip.jpg"); ?>">
-        </li>
+
+    <ul class="breadcrumb">
+        <li><a href="<?php echo base_url("index.php/ToMobile"); ?>">首页</a></li>
+        <li ><a href="<?php echo base_url("index.php/Mservice");?>">服务</a></li>
+        <li class="active">乐诚案例</li>
     </ul>
+
 </div>
+
+<div class="bs-component">
+    <div class="alert alert-dismissible alert-success">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        <strong class="mobile_font_nor">乐诚电路检测- 2014年</strong><a href="#" class="alert-link">某车辆经故障解码后恢复正常</a>.
+    </div>
+
+
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title">修复中-完成</h3>
+        </div>
+        <div class="panel-body">
+            <img src="<?php echo base_url("ui_ref/images/circuit/process.jpg"); ?>" class="img-responsive">
+        </div>
+    </div>
+
+
+</div>
+
 
 <footer id="footer">
     <div class="container">
@@ -96,6 +97,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 &copy;<b class="mobile_font_nor">2015<a target="_blank" href="#" title="虎门乐诚汽修">虎门乐诚汽修</a>.版权所有.</b>
 
             </div>
+
         </div>
         <div class="row">
             <div class="col-sm-12 center-block" style="text-align: center">

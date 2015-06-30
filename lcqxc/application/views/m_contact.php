@@ -31,7 +31,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="<?php echo base_url("index.php/ToMobile#qrcode"); ?>">关注微信公众号</a></li>
+                    <li><a href="<?php echo base_url("index.php/Mnews#qrcode"); ?>">关注微信公众号</a></li>
                 </ul>
             </div>
         </div>
