@@ -88,8 +88,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             阅读:<?php echo $news_item['count'] ?>
         </li>
         <a href="<?php echo base_url().'index.php/Mnewsdetail/index/'. $news_item['id'] ?>" class="list-group-item">
-            <h4 class="list-group-item-heading"><?php echo $news_item['title'] ?></h4>
+            <h4 class="list-group-item-heading" style="border-bottom: 1px solid #dddddd;text-align: center">
+                <?php echo $news_item['title'] ?>
+
+            </h4>
             <p class="list-group-item-text">
+                <?php
+                if(isset($news_item['images'])&&$news_item['images']!=null){
+                    echo "<img src='".base_url($news_item['images'])."' class='img-responsive center-block' width='100' height='50' >";
+                }
+                ?>
                 <?php
                     if(strlen($news_item['summary'])>2){
                         echo $news_item['summary'];

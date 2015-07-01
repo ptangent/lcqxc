@@ -37,5 +37,23 @@ class Newsmodel extends CI_Model {
         $this->db->update(self::TBL_NEWS);
         return null;
     }
+
+    public function set_news()
+    {
+        $this->load->helper('url');
+
+
+
+        $data = array(
+            'title' => $this->input->post('title'),
+            'summary' =>$this->input->post('summary'),
+            'time' =>date("Y-m-d"),
+            'author' =>"乐诚",
+            'count' =>10,
+            'content' => $this->input->post('content')
+        );
+
+        return $this->db->insert(self::TBL_NEWS, $data);
+    }
 }
 ?>
