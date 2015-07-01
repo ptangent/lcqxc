@@ -88,8 +88,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <a href="#" class="list-group-item">
             <h2 class="list-group-item-heading"><?php echo $news['title'] ?></h2>
             <?php
-            $str=base_url( $news['images']);
-                if($str!=null){
+                if(isset($news['images'])&&$news['images']!=null){
                     echo  "<img src='".base_url( $news['images'])."' class='img-responsive'>";
                 }
             ?>
