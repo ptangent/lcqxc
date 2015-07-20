@@ -90,7 +90,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </a>
 
     <a class="list-group-item" href="<?php echo base_url("index.php/Mnews");?>">
-        <i class="fa fa-rss fa-fw fa-4x "></i>&nbsp; &nbsp;<b class="mobile_big_text">公众号文章</b>
+        <i class="fa fa-rss fa-fw fa-4x "></i>&nbsp; &nbsp;
+        <b class="mobile_big_text">公众号文章 &nbsp;&nbsp;收录:<span class="badge"><?php echo $newscount;?></span></b>
+
+
+
+
     </a>
 </div>
 
